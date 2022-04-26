@@ -38,13 +38,13 @@ body {
 .location {
     display: flex;
     justify-content: center;
-    border: 1px solid grey;
+    border: 1px solid transparent;
     background-color: #eaeaea;
     border-left: none;
     border-right: none;
     border-bottom: none;
     height: 50px;
-    box-shadow: inset 0px 5px 0px 0px #02020212;
+    box-shadow: inset 0px 2px 0px 0px #0202020d;
 }
 
 .location > i {
@@ -120,6 +120,8 @@ button {
     justify-content: flex-end;
     margin-top: -32px;
     margin-right: 20px;
+    width: min-content;
+    margin-left: 300px;
 }
 
 .laNoteEnchantee {
@@ -219,9 +221,8 @@ li > i {
     margin-bottom: 20px;
 }
 
-.etape1 > i {
-    display: flex;
-    justify-content: flex-start;
+#fonctionnement {
+    margin: auto;
 }
 
 .etape1 , .etape2 , .etape3 {
@@ -230,6 +231,7 @@ li > i {
     border-radius: 20px;
     margin-bottom: 20px;
     box-shadow: 5px 5px 5px #00000029;
+    margin-right: 15px;
 }
 
 header > i {
@@ -331,13 +333,86 @@ header > i {
     
 }
 
+.fa-circle-check {
+    display: flex;
+    margin-left: 320px;
+    margin-top: -40px;
+    transition: 2s ease-in;
+    visibility: hidden;
+}
+
+.fa-circle-check:active {
+    margin-right: 20px;
+    visibility: visible;
+}
+
 .validation {
     transition: 1s ease-in-out;
 }
 
 .validation:active {
-    margin-right: 40px;
-    width: 350px;
+    margin-right: 80px;
+    background-color: aquamarine;
 }
 
+.like {
+    transition: 1s ease-in-out;
+}
 
+.like:hover {
+    display: none;
+}
+
+.like2 {
+    transition: 1s ease-in-out;
+    color: black;
+    opacity: 0;
+    margin-top: -16px!important;
+}
+
+.like2:hover {
+    opacity: 1;
+    color: #FF79DA;
+}
+
+ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+}
+
+li {
+    list-style-position: inside;
+    counter-increment: my-awesome-counter;
+}
+
+.etape1::before , .etape2::before , .etape3::before {
+  content: counter(my-awesome-counter);
+  background: #9356DC;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: -10px;
+
+}
+
+li:hover > i {
+    color: #9356DC;
+}
+
+li:hover {
+    background-color: rgba(146, 86, 220, 0.11);
+}
+
+.etape1 > p , .etape2 > p , .etape3 > p {
+    display:-webkit-inline-box;
+}
+
+.style-titre-menu {
+    border-bottom: 4px solid aquamarine;
+    width: 16%;
+}
