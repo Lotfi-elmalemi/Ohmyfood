@@ -96,6 +96,25 @@ button {
     margin-left: 20px;
 }
 
+.card-Description {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.restaurant-Description {
+    flex: 1;
+    margin-left: 10px
+}
+
+.button-Like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-right: 10px;
+}
+
 .laPaletteDuGout {
     width: 335px;
     height: 250px;
@@ -105,6 +124,7 @@ button {
     border-radius: 20px;
     margin-bottom: 20px;
     line-height: 10px;
+    display: block;
 }
 
 .laPaletteDuGout > img {
@@ -115,14 +135,7 @@ button {
     border-top-right-radius: 20px;
 }
 
-.laPaletteDuGout > i {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -32px;
-    margin-right: 20px;
-    width: min-content;
-    margin-left: 300px;
-}
+
 
 .laNoteEnchantee {
     width: 335px;
@@ -200,6 +213,10 @@ button {
     justify-content: flex-end;
     margin-top: -32px;
     margin-right: 20px;  
+}
+
+.restaurant-Name {
+    width: fit-content;
 }
 
 footer {
@@ -323,11 +340,11 @@ header > i {
 
 @keyframes menu{
     from {
-        margin-bottom: 10%;
+        transform: scale(0);
         opacity: 0%;       
     }
     to {
-        margin-bottom: 0%;
+        transform: scale(1);
         opacity: 100%;              
     }
     
@@ -338,7 +355,6 @@ header > i {
     margin-left: 320px;
     margin-top: -40px;
     transition: 2s ease-in;
-    visibility: hidden;
 }
 
 .fa-circle-check:active {
@@ -350,43 +366,37 @@ header > i {
     transition: 1s ease-in-out;
 }
 
-.validation:active {
+.validation:hover {
     margin-right: 80px;
     background-color: aquamarine;
 }
 
-.like {
-    transition: 1s ease-in-out;
-}
-
-.like:hover {
-    display: none;
-}
 
 .like2 {
     transition: 1s ease-in-out;
-    color: black;
     opacity: 0;
-    margin-top: -16px!important;
+    position: absolute;
+    background: linear-gradient(180deg,#9356dc,#ff79da);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .like2:hover {
     opacity: 1;
-    color: #FF79DA;
 }
 
 ol {
     list-style: none;
-    counter-reset: my-awesome-counter;
+    counter-reset: my-counter;
 }
 
 li {
     list-style-position: inside;
-    counter-increment: my-awesome-counter;
+    counter-increment: my-counter;
 }
 
 .etape1::before , .etape2::before , .etape3::before {
-  content: counter(my-awesome-counter);
+  content: counter(my-counter);
   background: #9356DC;
   width: 2rem;
   height: 2rem;
