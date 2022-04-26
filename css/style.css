@@ -3,6 +3,30 @@ body {
     background-color: #f6f6f6;
 }
 
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #9356DC; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear;
+    animation-iteration-count: 2;
+    position: absolute;
+    animation-fill-mode: forwards;
+    margin-left: 110px;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    99% { transform: rotate(360deg);}
+    100% {opacity: 0;}
+}
+
+.loader:after {
+    display: none;
+}
+
 .logo {
     width: 155px;
     display: block;
@@ -268,3 +292,52 @@ header > i {
     margin-top: 45px;
     margin-bottom: 60px;
 }
+
+.transition1 {
+    animation-name: menu;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    width: 350px;
+}
+
+.transition2 {
+    animation-name: menu;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    width: 350px;
+}
+
+.transition3 {
+    animation-name: menu;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    width: 350px;
+}
+
+@keyframes menu{
+    from {
+        margin-bottom: 10%;
+        opacity: 0%;       
+    }
+    to {
+        margin-bottom: 0%;
+        opacity: 100%;              
+    }
+    
+}
+
+.validation {
+    transition: 1s ease-in-out;
+}
+
+.validation:active {
+    margin-right: 40px;
+    width: 350px;
+}
+
+
