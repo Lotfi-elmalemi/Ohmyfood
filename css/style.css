@@ -11,10 +11,28 @@ body {
     height: 120px;
     animation: spin 2s linear;
     animation-iteration-count: 2;
-    position: absolute;
+    position: fixed;
     animation-fill-mode: forwards;
-    margin-left: 110px;
 }
+
+.loader-Container {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loader-container 8s linear;
+}
+
+@keyframes loader-container {
+    0% {background-color: #808080d9;
+        position: fixed;}
+    99%{background-color: #808080d9;}
+    100% {background-color: transparent
+        position:unset;}
+}
+
 
 
 @keyframes spin {
@@ -340,11 +358,10 @@ header > i {
 
 @keyframes menu{
     from {
-        transform: scale(0);
+        transform: translateY(20px);
         opacity: 0%;       
     }
     to {
-        transform: scale(1);
         opacity: 100%;              
     }
     
@@ -383,6 +400,7 @@ header > i {
 
 .like2:hover {
     opacity: 1;
+    font-size:xx-large
 }
 
 ol {
