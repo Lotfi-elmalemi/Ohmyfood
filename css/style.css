@@ -29,8 +29,8 @@ body {
     0% {background-color: #808080d9;
         position: fixed;}
     99%{background-color: #808080d9;}
-    100% {background-color: transparent
-        position:unset;}
+    100% {background-color: transparent;
+          position:unset;}
 }
 
 
@@ -324,6 +324,12 @@ header > i {
     margin-left: 10px;
 }
 
+.menu-Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .prix {
     display: flex;
     justify-content: end;
@@ -411,16 +417,16 @@ header > i {
 
 ol {
     list-style: none;
-    counter-reset: my-counter;
+    counter-reset: counter;
 }
 
 li {
     list-style-position: inside;
-    counter-increment: my-counter;
+    counter-increment: counter;
 }
 
 .etape1::before , .etape2::before , .etape3::before {
-  content: counter(my-counter);
+  content: counter(counter);
   background: #9356DC;
   width: 2rem;
   height: 2rem;
@@ -434,11 +440,11 @@ li {
 
 }
 
-li:hover > i {
+.etape1:hover , .etape2:hover , .etape3:hover > i {
     color: #9356DC;
 }
 
-li:hover {
+.etape1:hover , .etape2:hover , .etape3:hover {
     background-color: rgba(146, 86, 220, 0.11);
 }
 
