@@ -139,6 +139,13 @@ button:hover {
     margin-right: 10px;
 }
 
+.big-Button-Like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .laPaletteDuGout {
     width: 335px;
     height: 250px;
@@ -276,10 +283,8 @@ li > i {
 }
 
 header > i {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: -40px;
-    margin-left: 20px;
+    margin-top: 25px;
+    margin-left: 10px;
 }
 
 .banniereRestaurant {
@@ -292,13 +297,12 @@ header > i {
 .nomRestaurant {
     display: flex;
     justify-content: space-around;
-    border: 2px solid #f6f6f6;
     background-color: #f6f6f6;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     position: absolute;
     margin-top: -70px;
-    width: 371px;
+    width: 100%;
 }
 
 .nomRestaurant > i {
@@ -318,6 +322,8 @@ header > i {
     height: 70px;
     line-height: 5px;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .style-menu > h3 , p {
@@ -325,16 +331,15 @@ header > i {
 }
 
 .menu-Title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: hidden;
 }
 
 .prix {
-    display: flex;
-    justify-content: end;
+    margin: auto;
     margin-right: 10px;
-    margin-top: -20px;
 }
 
 .commander {
@@ -379,25 +384,57 @@ header > i {
     
 }
 
-.fa-circle-check {
+header {
     display: flex;
-    margin-left: 320px;
-    margin-top: -40px;
-    transition: 2s ease-in;
+    justify-content: center;
 }
 
-.fa-circle-check:active {
-    margin-right: 20px;
-    visibility: visible;
+.fa-circle-check {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    display: none;
+    animation-name: validation-check;
+    animation-duration:1s;
 }
 
-.validation {
-    transition: 1s ease-in-out;
-}
-
-.validation:hover {
-    margin-right: 80px;
+.validation-Background {
     background-color: aquamarine;
+    animation-name: background-translate;
+    animation-duration:.5s;
+    display: none;
+    animation-fill-mode: forwards;
+    justify-content: center;
+}
+
+.validation:hover .validation-Background {
+    display: flex;
+}
+
+@keyframes background-translate {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 25%;
+        margin-left: 10px;
+    }
+}
+
+@keyframes validation-check {
+    0%{
+        transform:rotate(180deg);
+     }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.validation:hover .fa-circle-check {
+    color: white;
+    display: flex;
 }
 
 
@@ -442,6 +479,10 @@ li {
 
 .etape1:hover , .etape2:hover , .etape3:hover > i {
     color: #9356DC;
+}
+
+.etape1:hover , .etape2:hover , .etape3:hover > p {
+    color:#9356DC;
 }
 
 .etape1:hover , .etape2:hover , .etape3:hover {
