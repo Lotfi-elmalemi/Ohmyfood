@@ -95,7 +95,7 @@ a {
     text-align: center;
     margin: auto;
     width: 50%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-top: 20px;
 }
 
@@ -105,7 +105,6 @@ button {
     width: 220px;
     border-radius: 50px;
     color: white;
-    margin-left: 80px;
     border: none;
 }
 
@@ -530,8 +529,31 @@ li {
     .button-Like {
         margin-top: 1%;
     }
+
+    .banniereRestaurant {
+        height: 470px;
+    }
+
+    .nomRestaurant {
+        width: 95%;
+        margin-left: 53px;
+    }
+
+    .style-titre-menu {
+        margin-left: 133px;
+        width: 3%;
+    }
 }
 
 .font-Title {
     font-family: 'Shrikhand' , sans-serif
+
+}
+
+.explorer-Button {
+    margin-left: 70px;
+}
+
+.menu-Subtitle {
+    text-overflow: ellipsis;
 }
