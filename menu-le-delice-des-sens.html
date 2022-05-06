@@ -2,75 +2,146 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="css/style.css" />
         <script src="https://kit.fontawesome.com/db360c70a7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Oh My Food</title>
     </head>
     <body>
+        <a href="index.html">
         <header>
+            <i class="fa-solid fa-arrow-left-long"></i>
             <img class="logo" src="images/logo/ohmyfood.png" alt="logo"/>
-            <i class="fa-solid fa-arrow-left-long iconeRetour"></i>
         </header>
+        </a>
         <section>
             <img class="banniereRestaurant" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo-du-restaurant-le-declice-des-sens" />
             <div class="nomRestaurant">
-                <h1>La delice des sens</h1>
-                <i class="fa-regular fa-heart fa-xl"></i>
+                <h1 class="font-Title">Le delice des sens</h1>
+                <div class="big-Button-Like">
+                    <i class="fa-2x fa-regular fa-heart like"></i>
+                    <i class="fa-2x fa-solid fa-heart like2"></i>
+                </div>
             </div>
             <div class="menu">
                 <div class="menu-entree">
-                    <h2>ENTRÉE</h2>
-                    <div class="style-menu">
-                        <h3>Tartare de thon</h3>
-                        <p>Assaisonné au yuzu</p>    
+                    <h2 class="style-titre-menu">ENTRÉE</h2>
+                    <div class="style-menu transition1 validation">
+                        <div class="menu-Title">
+                            <h3>Tartare de thon</h3>
+                            <div class="menu-Subtitle">
+                                <span>Assaisonné au yuzu</span>
+                            </div>
+                        </div>  
                         <p class="prix">25€</p>
+                        <div class="validation-Background">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
-                    <div class="style-menu">
-                        <h3>Bouchée de homard croustillant</h3>
-                        <p>Et sa farandole de petits légumes</p>
+                    <div class="style-menu transition2 validation">
+                        <div class="menu-Title">
+                            <h3>Bouchée de homard croustillant</h3>
+                            <div class="menu-Subtitle">
+                                <span>Et sa farandole de petits légumes</span>
+                            </div>
+                        </div>
                         <p class="prix">35€</p>
+                        <div class="validation-Background">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
-                    <div class="style-menu">
-                        <h3>Velouté de cèpes</h3>
-                        <p>Aux truffes</p>
+                    <div class="style-menu transition3 validation">
+                        <div class="menu-Title">
+                            <h3>Velouté de cèpes</h3>
+                        <div class="menu-Subtitle">
+                            <span>Aux truffes</span>
+                        </div>
+                    </div>
                         <p class="prix">20€</p>
-                    </div>    
+                        <div class="validation-Background">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="menu-entree">
-                    <h2>PLATS</h2>
-                    <div class="style-menu">
-                        <h3>Poulet rôti aux herbes de Provence</h3>
-                        <p>Et sa crème de truffe</p>
+                    <h2 class="style-titre-menu">PLATS</h2>
+                    <div class="style-menu transition1 validation">
+                        <div class="menu-Title">
+                            <h3>Poulet rôti aux herbes de Provence</h3>
+                            <div class="menu-Subtitle">
+                                <span>Et sa crème de truffe</span>
+                            </div>
+                        </div>
                         <p class="prix">40€</p>
+                        <div class="validation-Background">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
-                    <div class="style-menu">
-                        <h3>Langouste rôtie</h3>
-                        <p>Et ses légumes de saison</p>
+                    <div class="style-menu transition2 validation">
+                        <div class="menu-Title">
+                            <h3>Langouste rôtie</h3>
+                            <div class="menu-Subtitle">
+                                <span>Et ses légumes de saison</span>
+                            </div>
+                        </div>
                         <p class="prix">35€</p>
+                        <div class="validation-Background">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
-                    <div class="style-menu">
-                        <h3>Côte de boeuf Angus</h3>
-                        <p>Et sa purée de panais</p>
+                    <div class="style-menu transition3 validation">
+                        <div class="menu-Title">
+                            <h3>Côte de boeuf Angus</h3>
+                            <div class="menu-Subtitle">
+                                <span>Et sa purée de panais</span>
+                            </div>
+                        </div>
                         <p class="prix">44€</p>
+                        <div class="validation-Background">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="menu-entree">
-                    <h2>DESSERTS</h2>
-                    <div class="style-menu">
-                        <h3>Farandole de desserts</h3>
-                        <p>Du chef</p>
+                    <h2 class="style-titre-menu">DESSERTS</h2>
+                    <div class="style-menu transition1 validation">
+                        <div class="menu-Title">
+                            <h3>Farandole de desserts</h3>
+                            <div class="menu-Subtitle">
+                                <span>Du chef</span>
+                            </div>
+                        </div>
                         <p class="prix">18€</p>
+                        <div class="validation-Background">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
-                    <div class="style-menu">
-                        <h3>Crème brulée</h3>
-                        <p>Revisitée</p>
+                    <div class="style-menu transition2 validation">
+                        <div class="menu-Title">
+                            <h3>Crème brulée</h3>
+                        <div class="menu-Subtitle">
+                            <span>Revisitée</span>
+                        </div>
+                    </div>
                         <p class="prix">22€</p>
+                        <div class="validation-Background">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
-                    <div class="style-menu">
-                        <h3>Tiramisu</h3>
-                        <p>À la noisette</p>
+                    <div class="style-menu transition3 validation">
+                        <div class="menu-Title">
+                            <h3>Tiramisu</h3>
+                        <div class="menu-Subtitle">
+                            <span>À la noisette</span>
+                        </div>
+                    </div>
                         <p class="prix">23€</p>
+                        <div class="validation-Background">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
                 </div>           
             </div>
@@ -79,7 +150,7 @@
             <button>Commander</button>
         </section>
         <footer>
-            <h2>ohmyfood</h2>
+            <h2 class="font-Title">ohmyfood</h2>
             <ul>
                 <li class="proposerRestaurant">
                     <i class="fa-solid fa-utensils"></i><span>Proposer un restaurant</span>
