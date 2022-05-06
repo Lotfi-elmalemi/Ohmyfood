@@ -557,3 +557,8 @@ li {
 .menu-Subtitle {
     text-overflow: ellipsis;
 }
+
+.mailto {
+    text-decoration: none;
+    color: white;
+}
