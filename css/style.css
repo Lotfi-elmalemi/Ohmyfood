@@ -332,7 +332,6 @@ header > i {
     background-color: white;
     width: 350px;
     height: 70px;
-    line-height: 5px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -347,6 +346,12 @@ header > i {
     overflow: hidden;
     white-space: nowrap;
     margin-left: 5px;
+}
+
+.menu-Subtitle {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .prix {
@@ -584,4 +589,12 @@ li {
 
 .section-Background-Color {
     background-color: #f6f6f6;
+}
+
+.menu-Title > h3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-block-end: 0px;
+    margin-block-start: 15px;
 }
